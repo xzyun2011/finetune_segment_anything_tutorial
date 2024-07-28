@@ -1,0 +1,12 @@
+conda create -n sam_env python=3.8
+conda activate sam_env
+
+
+imgviz
+scikit-image
+opencv_python_headless
+pillow
+pyqt5
+pyyaml
+#torch>=2.1.1
+#torchvision

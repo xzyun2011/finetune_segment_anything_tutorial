@@ -1,0 +1,8 @@
+torch
+torchvision
+tqdm
+opencv_python
+numpy
+monai
+pillow
+
