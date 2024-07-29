@@ -14,11 +14,11 @@
 
 **微调前**
 
-![sam_original_cut](../zhiyun/notes/figure/sam_original_cut.gif)
+![sam_original_cut](assets/sam_original_cut.gif)
 
 **微调后**
 
-![sam_finetune_cut](../zhiyun/notes/figure/sam_finetune_cut.gif)
+![sam_finetune_cut](assets/sam_finetune_cut.gif)
 
 ### 基于box prompt
 
@@ -26,11 +26,11 @@
 
 **微调前**
 
-![000039](../zhiyun/notes/figure/000039.png)
+![000039](assets/000039.png)
 
 **微调后**
 
-![000039_finetuned](../zhiyun/notes/figure/000039_finetuned.png)
+![000039_finetuned](assets/000039_finetuned.png)
 
 ## 快速入手
 
