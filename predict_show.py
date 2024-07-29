@@ -129,10 +129,10 @@ def main(opt):
 
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--sam-weights', type=str, default=ROOT / 'weights/sam_vit_b_01ec64.pth', help='original sam weights path')
-    parser.add_argument('--decoder-weights', type=str, default=ROOT / "weights/sam_decoder_fintune_pointbox.pth", help='finetuned decoder weights path')
-    parser.add_argument('--model-type', type=str, default='vit_b', help='sam model type: vit_b, vit_l, vit_h')
-    parser.add_argument('--data', type=str, default='/cv/datasets/voc/VOCdevkit', help='VOCdevkit dataset path')
+    parser.add_argument('--sam-weights', '--w',type=str, default=ROOT / 'weights/sam_vit_b_01ec64.pth', help='original sam weights path')
+    parser.add_argument('--model-type', '--type', type=str, default='vit_b', help='sam model type: vit_b, vit_l, vit_h')
+    parser.add_argument('--decoder-weights', '--decoder', type=str, default=ROOT / "weights/sam_decoder_fintune_pointbox.pth", help='finetuned decoder weights path')
+    parser.add_argument('--data', type=str, default=ROOT /'data_example/VOCdevkit', help='VOCdevkit dataset path')
     parser.add_argument('--save_dir', default=ROOT / 'runs/predict_test', help='path to save checkpoint')
     parser.add_argument('--device', default='0', help='cuda device only one, 0 or 1 or 2...')
     return parser.parse_known_args()[0] if known else parser.parse_args()

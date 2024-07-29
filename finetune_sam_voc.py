@@ -202,9 +202,9 @@ def main(opt):
 
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--sam-weights', type=str, default=ROOT / 'weights/sam_vit_b_01ec64.pth', help='original sam weights path')
-    parser.add_argument('--model-type', type=str, default='vit_b', help='sam model type: vit_b, vit_l, vit_h')
-    parser.add_argument('--data', type=str, default='/cv/datasets/voc/VOCdevkit', help='VOCdevkit dataset path')
+    parser.add_argument('--sam-weights', '--w', type=str, default=ROOT / 'weights/sam_vit_b_01ec64.pth', help='original sam weights path')
+    parser.add_argument('--model-type', '--type', type=str, default='vit_b', help='sam model type: vit_b, vit_l, vit_h')
+    parser.add_argument('--data', type=str, default=ROOT /'data_example/VOCdevkit', help='your VOCdevkit dataset path')
     parser.add_argument('--point-prompt', type=bool, default=True, help='use point prompt')
     parser.add_argument('--box-prompt', type=bool, default=True, help='use box prompt')
     parser.add_argument('--epochs', type=int, default=100, help='total training epochs')
