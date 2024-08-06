@@ -8,7 +8,7 @@ This is a tutorial of fine-tuning segment anything based on VOC2007 dataset
 
 ### Point prompt
 
-Fine-tuning specifically for point prompts. Used I[ISAT_with_segment_anything](https://github.com/yatengLG/ISAT_with_segment_anything) tool, which uses SAM for automatic annotation, to compare results. 
+Fine-tuning specifically for point prompts. Used [ISAT_with_segment_anything](https://github.com/yatengLG/ISAT_with_segment_anything) tool, which uses SAM for automatic annotation, to compare results. 
 
 Before fine-tuning, multiple clicks on several points were needed for good segmentation. 
 
